@@ -29,22 +29,22 @@ public class SandwichShop {
         float seniorLargeDiscount = discountCalc("Large", age);
 
         if (age > 17 && age < 65 && size.equals("Regular")){
-            System.out.printf("Your total is: $%.2f ", regularSize);
+            System.out.printf("Your total is: $%.2f. ", regularSize);
         }
         else if (age > 17 && age < 65 && size.equals("Large")) {
-            System.out.printf("Your total is: $%.2f ", largeSize);
+            System.out.printf("Your total is: $%.2f. ", largeSize);
         }
         else if (age <= 17 && size.equals("Regular")) {
-            System.out.printf("Your total is: $%.2f ", studentRegDiscount);
+            System.out.printf("Your total is: $%.2f. ", studentRegDiscount);
         }
         else if (age <= 17 && size.equals("Large")) {
-            System.out.printf("Your total is: $%.2f ", studentLargeDiscount);
+            System.out.printf("Your total is: $%.2f. ", studentLargeDiscount);
         }
         else if (age >= 65 && size.equals("Regular")) {
-            System.out.printf("Your total is: $%.2f ", seniorRegDiscount);
+            System.out.printf("Your total is: $%.2f. ", seniorRegDiscount);
         }
         else if (age >= 65 && size.equals("Large")) {
-            System.out.printf("Your total is: $%.2f ", seniorLargeDiscount);
+            System.out.printf("Your total is: $%.2f. ", seniorLargeDiscount);
         }
         else {
             System.out.println("Have a nice day!");
